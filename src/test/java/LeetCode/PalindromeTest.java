@@ -17,7 +17,7 @@ Palindrome palindrome = new Palindrome();
         Assertions.assertTrue(palindrome.isPalindrome(121));
     }
     @Test
-    @DisplayName("Pandloriam test 121")
+    @DisplayName("Pandloriam test -121")
     void palindromeTestNeg121()
     {
 
