@@ -1,8 +1,6 @@
 package LeetCode;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
+import java.util.*;
 
 public class startArea {
 
@@ -12,10 +10,14 @@ public class startArea {
         //Roman to Integer *Completed
         //Shuffle String *Completed
         //Reduce Array Size *Started
-    int[] nums = {3,3,3,3,5,5,5,2,2,7};
-
-    ReduceArraySize ra = new ReduceArraySize();
-    ra.minSetSize(nums);
+//    int[] nums = {3,3,3,3,5,5,5,2,2,7};
+//
+//    ReduceArraySize ra = new ReduceArraySize();
+//    ra.minSetSize(nums);
+//
+//        Learn myLearn = new Learn();
+//
+//        myLearn.toSentence(new String[]{"Alice", "Bob", "Carol"});
 
 
 
