@@ -11,15 +11,11 @@ public class startArea {
         //Remove Element *Completed
         //Roman to Integer *Completed
         //Shuffle String *Completed
-        //First Unique String *Started
-        String inputTest = "abbc";
-        String input = "leetcode"; //0
-        String input2 = "loveleetcode"; //2
-        String input3 = "aabb"; // -1
+        //Reduce Array Size *Started
+    int[] nums = {3,3,3,3,5,5,5,2,2,7};
 
-        FirstUnique firstUnique = new FirstUnique();
-
-        firstUnique.firstUniqChar(input2);
+    ReduceArraySize ra = new ReduceArraySize();
+    ra.minSetSize(nums);
 
 
 
