@@ -10,7 +10,8 @@ public class ReduceArraySize {
         int current = arr[0];
         int count = 0;
         int iteration = 0;
-        int biggestArray = 0;
+        int biggestArrayCount = 0;
+        int biggestArrayNumber = 0;
         System.out.println("The Half Length would be: " + arr.length / 2);
         System.out.println("Size Of Array Equals: " + arr.length);
          int halfSize = arr.length / 2;
@@ -31,10 +32,16 @@ public class ReduceArraySize {
             else{count++;};
 
         }
-        //System.out.println(arrayListNumber.add(arr.length - 1) +" Count Before Change " + arrayListNumberCount.add(count));
+        System.out.println(arrayListNumber.add(arr[arr.length - 1]) +" Count Before Change " + arrayListNumberCount.add(count));
         for (int i = 0; i < arrayListNumber.size(); i++) {
+            if (arrayListNumberCount.get(i) > biggestArrayCount)
+            {
+                biggestArrayCount = arrayListNumberCount.get(i);
+                biggestArrayNumber = arrayListNumber.get(i);
+            }
             System.out.println("The Number >>>> "+arrayListNumber.get(i) +" <<<<< Appeared >>>> " + arrayListNumberCount.get(i) + " <<<< Times.");
         }
+        System.out.println( biggestArrayNumber +" <<<<<< With Biggest Size of >>>> " + biggestArrayCount);
         return totalSets;
     }
 
